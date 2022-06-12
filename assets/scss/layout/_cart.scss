@@ -1,0 +1,41 @@
+.cart{
+    &__item{
+        border-bottom: 1px solid #DDD;
+        padding: 15px 0;
+        display: flex;
+    }
+    &__image{
+        margin-right: 20px;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    &__info{
+    }
+    &__seller{
+        font-size: 13px;
+        line-height: 19px;
+    }
+    &__statusAvailable{
+        color: $stocktrue;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    &__statusNotAvailable{
+        color: $stockfalse;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    &__shipping{
+        color: $shippingtrue;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    &__noShipping{
+        color: $stockfalse;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+}

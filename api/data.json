@@ -5,7 +5,7 @@
         "image": "https://images-na.ssl-images-amazon.com/images/I/41UJuETOtuL._SS100_.jpg",
         "name": "Daniel Wellington Stainless Steel Watch with Brown Strap",
         "seller": "Daniel Wellington",
-        "isAvailable": true,
+        "isAvailable": false,
         "isEligible": true
       },
       {
@@ -23,8 +23,8 @@
         "image": "https://images-na.ssl-images-amazon.com/images/I/31yjqkf3PAL._SS100_.jpg",
         "name": "Apple Watch Band Soft Silicone Replacement Sport Band for 38mm Apple Watch",
         "seller": "MoKo",
-        "isAvailable": true,
-        "isEligible": true
+        "isAvailable": false,
+        "isEligible": false
       }
     ]
   }

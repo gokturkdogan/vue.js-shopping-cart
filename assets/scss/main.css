@@ -1,0 +1,47 @@
+.cart__item {
+  border-bottom: 1px solid #DDD;
+  padding: 15px 0;
+  display: flex;
+}
+.cart__image {
+  margin-right: 20px;
+}
+.cart__image img {
+  width: 100px;
+  height: 100px;
+}
+.cart__seller {
+  font-size: 13px;
+  line-height: 19px;
+}
+.cart__statusAvailable {
+  color: #008a00;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.cart__statusNotAvailable {
+  color: red;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.cart__shipping {
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.cart__noShipping {
+  color: red;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 13px;
+  line-height: 19px;
+  color: #000;
+  font-family: Arial, sans-serif;
+  background: #FFF;
+}
+body h4 {
+  color: #0000FF;
+}/*# sourceMappingURL=main.css.map */

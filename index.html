@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>VueJS Demo</title>
-  <link rel="stylesheet" type="text/css" href="app.css" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" type="text/css" href="assets/scss/main.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </head>
 <body>
   <div id="app">
@@ -14,38 +14,42 @@
     <h2>Shopping Cart</h2>
     <p v-if="!cart.length">No item in cart.</p>
     <div class="cart">
-      <div class="item" v-for="(item, index) in cart">
-        <div class="image">
+      <div class="cart__item" v-for="(item, index) in cart">
+        <div class="cart__image">
           <a v-bind:href="item.url">
             <img v-bind:src="item.image" />
           </a>
         </div>
-        <div class="info">
+        <div class="cart__info">
           <h4>{{item.name}}</h4>
-          <p class="seller">by {{item.seller}}</p>
-          <p class="status available" v-if="item.isAvailable">In Stock</p>
-          <p class="shipping" v-if="item.isEligible">Eligible for FREE Shipping & FREE Returns</p>
-          <a href="#" v-on:click="removeFromCart(index)">Delete</a>
-          <a href="#" class="secondary" v-on:click="saveForLater(index)">Save for later</a>
+          <p class="cart__seller">by {{item.seller}}</p>
+          <p class="cart__statusAvailable" v-if="item.isAvailable">In Stock</p>
+          <p class="cart__statusNotAvailable" v-if="!item.isAvailable">No Stock</p>
+          <p class="cart__shipping" v-if="item.isEligible">Eligible for FREE Shipping & FREE Returns</p>
+          <p class="cart__noShipping" v-if="!item.isEligible">no free shipping</p>
+          <a href="#"  class="btn" v-on:click="removeFromCart(index)">Delete</a>
+          <a href="#" class="btn" v-on:click="saveForLater(index)">Save for later</a>
         </div>
       </div>
     </div>
 
     <h2 class="saved-header">Saved for later ({{saved.length}} item)</h2>
     <div class="cart">
-      <div class="item" v-for="(item, index) in saved">
-        <div class="image">
+      <div class="cart__item" v-for="(item, index) in saved">
+        <div class="cart__image">
           <a v-bind:href="item.url">
             <img v-bind:src="item.image" />
           </a>
         </div>
-        <div class="info">
+        <div class="cart__info">
           <h4>{{item.name}}</h4>
-          <p class="seller">by {{item.seller}}</p>
-          <p class="status available" v-if="item.isAvailable">In Stock</p>
-          <p class="shipping" v-if="item.isEligible">Eligible for FREE Shipping & FREE Returns</p>
-          <a href="#" v-on:click="removeFromSavedList(index)">Delete</a>
-          <a href="#" class="secondary" v-on:click="moveToCart(index)">Move to cart</a>
+          <p class="cart__seller">by {{item.seller}}</p>
+          <p class="cart__statusAvailable" v-if="item.isAvailable">In Stock</p>
+          <p class="cart__statusNotAvailable" v-if="!item.isAvailable">No Stock</p>
+          <p class="cart__shipping" v-if="item.isEligible">Eligible for FREE Shipping & FREE Returns</p>
+          <p class="cart__noShipping" v-if="!item.isEligible">no free shipping</p>
+          <a href="#"  class="btn" v-on:click="removeFromSavedList(index)">Delete</a>
+          <a href="#"  class="btn" v-on:click="moveToCart(index)">Move to cart</a>
         </div>
       </div>
     </div>

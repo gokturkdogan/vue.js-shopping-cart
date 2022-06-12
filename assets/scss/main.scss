@@ -1,0 +1,13 @@
+@import 'layout/cart';
+@import 'variables/colors';
+@import 'components/buttons';
+body{
+    font-size: 13px;
+    line-height: 19px;
+    color: $mainfont;
+    font-family: Arial, sans-serif;
+    background: $mainbg;
+    h4{
+        color: $productname;
+    }
+}
