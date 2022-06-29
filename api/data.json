@@ -5,7 +5,7 @@
         "image": "https://images-na.ssl-images-amazon.com/images/I/41UJuETOtuL._SS100_.jpg",
         "name": "Daniel Wellington Stainless Steel Watch with Brown Strap",
         "seller": "Daniel Wellington",
-        "isAvailable": false,
+        "isAvailable": true,
         "isEligible": true
       },
       {
@@ -14,7 +14,7 @@
         "name": "Apple Watch Band Milanese Loop",
         "seller": "MoKo",
         "isAvailable": true,
-        "isEligible": false
+        "isEligible": true
       }
     ],
     "saved": [
@@ -23,7 +23,15 @@
         "image": "https://images-na.ssl-images-amazon.com/images/I/31yjqkf3PAL._SS100_.jpg",
         "name": "Apple Watch Band Soft Silicone Replacement Sport Band for 38mm Apple Watch",
         "seller": "MoKo",
-        "isAvailable": false,
+        "isAvailable": true,
+        "isEligible": false
+      },
+      {
+        "url": "https://www.amazon.com/gp/product/B0142CCDT2/ref=ox_sc_act_image_1?ie=UTF8&psc=1&smid=A2VT4H683M5NNA",
+        "image": "https://m.media-amazon.com/images/I/71k+CNQkGDL._AC_UX385_.jpg",
+        "name": "Migeec Strap for Apple Watch 38/40/41mm 42/44/45mm",
+        "seller": "Migeec Store",
+        "isAvailable": true,
         "isEligible": false
       }
     ]

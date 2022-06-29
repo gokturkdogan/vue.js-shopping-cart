@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
         }
       },
       created() {
-        fetch('/api/data.json')
+        fetch('./api/data.json')
           .then((res) => { return res.json() })
           .then((res) => {
             this.isLoading = false;
